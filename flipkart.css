@@ -1,0 +1,433 @@
+*{
+    padding: 0;
+    margin: 0;
+    
+
+
+}
+body{
+    background-color: whitesmoke;
+}
+
+nav{
+    background-color: #2874f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0px;
+}
+        
+.plus-color{
+    color: yellow;
+    font-weight: 900;
+}
+.logo p{
+    color: white;
+    position: relative;
+    top: -5px;
+}
+.search {
+    background-color: white;
+    padding: 8px 10px;
+    width: 420px;
+    height: 20px;
+    margin: 0px 15px;
+    display: flex;
+    justify-content: space-between;
+    color:#2874f0 ;
+    border-radius: 5px;
+}
+.search input{
+    width: 380px;
+    outline: none;
+    border: none;
+    font-size: 15px;
+}
+.recentsearch{
+    display: none;
+    position: absolute;
+    top: 49px;
+    width: 420px;
+    padding: 8px;
+    margin-left: -8px;
+    height: 350px;
+    background-color:white;
+    box-shadow:-5px 5px 7px rgba(0,0,0,.2)
+     5px 5px 10px rgba(0,0,0,.2);
+     border-top: 1px solid #ccc;
+     padding: 8px 10px;
+     margin: -10px;
+
+}
+.recentsearch-list{
+    font-size: 16px;
+    display: flex;
+    color: #413f3f;
+}
+.recentsearch-list p,
+.recentsearch-listdiscover p{
+    padding-left: 15px;
+    color: rgba(24,22,22);
+}
+.discovermore{
+    margin: 15px 0px;
+    font-size: 15px;
+    color: #413f3f;
+}
+.recentsearch-listdiscover{
+    padding: 10px 0px;
+    display: flex;
+
+}
+.recentsearch-listdiscover i{
+    color: #413f3f;
+    font-size: 18px;
+}
+.search:focus-within .recentsearch{
+    display: block;
+}
+.login-button{
+    padding: 7px 30px;
+    font-size: 16px;
+    font-weight: 550;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #2874f0;
+
+}
+.hoverlogin{
+    position: absolute;
+    top: 62px;
+    height: 370px;
+    background-color: aqua;
+    width: 230px;
+    margin-left: -92px;
+    background-color:white;
+    box-shadow:-5px 5px 7px rgba(0,0,0,.2)
+     5px 5px 10px rgba(0,0,0,.2);
+     
+     align-items: center;
+     flex-direction: column;
+     padding: 0px 10px;
+     font-weight: 600;
+     color: black;
+     padding-top: 10px;
+     display: none;
+}
+.triangleup{
+    position: relative;
+    height: 0;
+    width: 0;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 15px solid white;
+    top: -15px;
+}
+.newuser{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+.newuser a{
+    color: #2874f0;
+    text-decoration: none;
+}
+.newuser a:hover{
+    text-decoration: underline;
+}
+.loginmenu{
+    width: 230px;
+    margin-top: 25px;
+}
+.menulist{
+    display: flex;
+    padding: 18px 0px;
+}
+.login-button:hover .hoverlogin{
+    display: flex;
+    cursor: pointer;
+
+}
+.menulist p{
+    padding-left: 10px;
+    font-weight: 500;
+}
+.menulist i{
+    color: #2874f0;
+}
+
+.navlink{
+    margin: 0px 30px;
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+}
+.angledownIcon i{
+    font-size: 10px;
+}
+/*************/
+.productnavbar{
+    height: 100px;
+    display: flex;
+    padding: 10px 20px;
+    justify-content: center;
+    margin-top: 10px;
+    border-bottom: 1px solid #ccc;
+    padding-top: 20px;
+   
+    user-select: none;
+    background-color: #fff;
+}
+.topnavbar{
+    width: 80px;
+
+    cursor: pointer;
+    flex: 1;
+}
+.topnavbar img{
+    width: 64px;
+    height: 64px;
+}
+.topnavbar p{
+    font-weight: 500;
+}
+.productnavbar:hover p{
+    color: #2874f0;
+}
+/*****************slider*********/
+.slider{
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+}
+.sliderimge{
+    width: 100%;
+    /*padding: 0px 10px;*/
+    padding-right: 0px;
+    height: 250px;
+    padding-top: 8px;
+    animation: 9s sliderimages;
+}
+.slider-image{
+    display: flex;
+    padding: 0px 10px;
+}
+.btn-container{
+    margin: auto;
+    width: 10px;
+    
+}
+.btn{
+    padding: 35px 15px;
+    background-color: #fff;
+    font-size: 30px;
+    
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+.btn-left{
+    position: relative;
+    left: -30px;
+}
+.btn-right{
+    position: relative;
+}
+
+/********animation*******/
+@keyframes sliderimages{
+    0%,1%,2%,3%,4%,5%,6%,7%,8%,9%,10%{
+        transform: translateX(0);
+    }
+    30%{
+        transform: translateX(-100%);
+    }
+    60%{
+        transform: translateX(-200%);
+    }
+    80%{
+        transform: translateX(-300%);
+    }
+    95%{
+        transform: translateX(-400%);
+    }
+}
+/**********electronic************/
+.best-electronic{
+    
+    height: 380px;
+   padding-top: 10px;
+    display: flex;
+    justify-content: space-around;
+
+}
+.left-section
+{
+    background-color: white;
+    width: 79%;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.1);
+
+    
+}
+.right-section{
+    background-color: white;
+    width: 19%;
+    padding: 0.5em;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.1);
+
+}
+.right-section img{
+    width: 100%;
+    height: 100%;
+    
+}
+.viewall-btn{
+    background-color:#2874f0 ;
+    color: white;
+    padding: 9px 18px;
+    border:none;
+    text-transform: uppercase;
+    border-radius: 1px;
+    font-size: 0.8rem;
+    
+}
+.left-section-top{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    height: 10%;
+    border-bottom: 2px solid #ccc;
+    
+
+}
+.left-section-top h1{
+    margin: 0;
+    font-size: 1.6rem;
+}
+.left-section-top p{
+    margin: 0;
+    color: #413f3f;
+}
+.left-part-cardcontainer{
+    height: 75%;
+  
+    display: flex;
+    overflow: hidden;
+}
+.card-product{
+    width: 200px;
+    height: 100%;
+    padding: 1.5em;
+    text-align: center;
+    background-color: white;
+    cursor: pointer;
+    
+   
+}
+.card-product:hover img{
+    transform:scale(1.1)
+}
+.card-product img{
+    width: 110px;
+    min-height: 120px;
+    padding-bottom: 10px;
+}
+.product-name{
+margin: 5px 0;
+font-size: 1.1rem;
+}
+.product-price{
+margin: 5px 0;
+color: #388e3c;
+}
+.product-desc{
+    margin: 5px 0;
+
+}
+/**************furnitures**************/
+.best-furnitures{
+    
+    height: 380px;
+    
+     padding-top: 10px;
+    display: flex;
+    justify-content: space-around;
+
+}
+.section-furniture{
+    background-color: white;
+    width: 100%;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.1);
+
+}
+.section-top{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    height: 10%;
+    border-bottom: 2px solid #ccc;
+}
+/***********fashion********/
+.best-fashion{
+    
+    height: 380px;
+    display: flex;
+     padding-top: 10px;
+  justify-content: space-around;
+
+}
+.section-fashion{
+    background-color: white;
+    width: 100%;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.1);
+
+}
+
+/*************discount*********/
+.discount{
+    display: flex;
+    height: 300px;
+    
+    background-color: whitesmoke;
+    margin: 5px  5px;
+    margin-top: 15px;
+
+
+}
+.discount img{
+    padding: 2px 2px;
+    padding-top: 15px;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.1);
+
+    
+}
+/******************Footer*********/
+.footer{
+    display: flex;
+    margin-top: 50px;
+    background-color:white;
+    height: 300px;
+    
+}
+.footer h4{
+    padding-top: 40px;
+    color: #787575;
+    font-size: 14px;
+    
+}
+.footer div{
+    margin-left: 30px;
+    
+}
+.footer p{
+    padding-top: 10px;
+    color: #787575;
+    font-size: 14px;
+}
+.footer strong{
+    color: black;
+}
+
+
